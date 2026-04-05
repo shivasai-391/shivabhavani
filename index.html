@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva Sai ❤️ Sree Bhavani</title>
+
+  <!-- Royal + Script Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      padding: 60px 20px 0;
+      overflow-x: hidden;
+      position: relative;
+
+      /* Base pastel + texture */
+      background:
+        url('https://www.transparenttextures.com/patterns/paper-fibers.png'),
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.6), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(220,235,240,0.6), transparent 40%),
+        linear-gradient(to bottom, #ffffff, #e6f0f2);
+      background-blend-mode: overlay, soft-light, soft-light, normal;
+    }
+
+    /* Temple background image overlay */
+    /* Temple background image layer */
+    .bg-temple {
+      position: fixed;
+      inset: 0;
+      background: url('https://i.ibb.co/zTTHMCP8/Govindaraja-Temple-History-Architecture-and-Significance-jpeg.jpg') no-repeat center/cover;
+      opacity: 0.25;
+      z-index: -2;
+      filter: blur(2px);
+    }
+
+    /* SHIMMER BORDER */
+    @keyframes shimmer {
+      0% { background-position: -200px 0; }
+      100% { background-position: 200px 0; }
+    }
+
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 10px;
+      left: 0;
+      background: linear-gradient(90deg,#c8a96a,#fff3cc,#c8a96a);
+      background-size: 200px 100%;
+      animation: shimmer 4s linear infinite;
+      z-index: 5;
+    }
+
+    body::before { top: 0; }
+    body::after { bottom: 0; }
+
+    .side-border {
+      position: fixed;
+      top: 0;
+      width: 10px;
+      height: 100%;
+      background: linear-gradient(#c8a96a,#fff3cc,#c8a96a);
+      animation: shimmer 4s linear infinite;
+      z-index: 5;
+    }
+
+    .left { left: 0; }
+    .right { right: 0; }
+
+    /* ENTRY ANIMATION */
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: #6b3c3c;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2rem;
+      color: #8b2c2c;
+      margin: 5px 0;
+    }
+
+    .amp {
+      font-size: 2rem;
+      color: #8b2c2c;
+      margin: 10px 0;
+    }
+
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #2c4c3c;
+      margin: 15px 0;
+    }
+
+    .details {
+      margin-top: 15px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .countdown {
+      font-family: 'Bahnschrift';
+      margin-top: 20px;
+      font-size: 1.4rem;
+      color: #b68b3c;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 24px;
+      background: linear-gradient(to right,#c8a96a,#b68b3c);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #6b3c3c;
+      font-style: italic;
+    }
+
+    .illustration {
+      width: 100%;
+      max-width: 500px;
+      margin: 30px auto 0;
+      display: block;
+    }
+
+    @media(max-width:768px){
+      h1{font-size:2.4rem}
+      .title{font-size:2.2rem}
+    }
+  
+
+    /* TEMPLE STYLE BORDER */
+    .temple-border {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      border: 2px solid rgba(200,169,106,0.6);
+      pointer-events: none;
+    }
+
+    /* Decorative inner border */
+    .temple-border::before {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border: 1px dashed rgba(200,169,106,0.4);
+    }
+
+    /* Ganesh section */
+    .ganesh {
+      margin-bottom: 15px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .ganesh img {
+      width: 80px;
+      opacity: 0.9;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Temple Background -->
+  <div class="bg-temple"></div>
+
+  <!-- Temple Border -->
+  <div class="temple-border"></div>
+
+  <!-- Ganesh Image -->
+  <div class="ganesh">
+    <img src="https://i.ibb.co/yc3kgMC4/download-cutout.png" alt="Lord Ganesh">
+  </div>
+
+  <div class="side-border left"></div>
+  <div class="side-border right"></div>
+
+  <div class="tagline fade" style="animation-delay:0.2s">It is with great pleasure that <br>we invite you to join us in celebrating the</div>
+<br>
+  <div class="title fade" style="animation-delay:0.4s">Engagement Ceremony</div>
+    <div class="tagline fade" style="animation-delay:0.2s">of</div>
+  <br>
+  <h1 class="fade" style="animation-delay:0.6s">Shiva Sai</h1>
+  <div class="amp fade" style="animation-delay:0.8s">&</div>
+  <h1 class="fade" style="animation-delay:1s">Sree Bhavani</h1>
+<br>
+  <div class="details fade" style="animation-delay:1.2s">
+    <p><strong>Sunday, April 12th, 2026</strong></p>
+    <p>10:00 AM Onwards</p>
+    <p>CR Banquet Hall, Housing Board Colony, Karimnagar</p>
+  </div>
+<br>
+  <div class="countdown fade" id="countdown" style="animation-delay:1.4s"></div>
+
+  <a class="btn fade" style="animation-delay:1.6s" href="https://www.google.com/maps/search/?api=1&query=CR+Banquet+Hall+Karimnagar" target="_blank">
+    📍 View Location
+  </a>
+<br>
+  <div class="footer fade" style="animation-delay:1.8s">With Best Compliments from Our Families</div>
+
+  <img class="illustration" src="https://i.ibb.co/FjwhGbH/Engagemnet-Invitation-1-cutout.png" alt="illustration">
+
+  <script>
+    const countdown = document.getElementById("countdown");
+    const eventDate = new Date("April 12, 2026 10:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        countdown.innerHTML = "🎉 It's Happening Now!";
+        return;
+      }
+
+      const d = Math.floor(distance/(1000*60*60*24));
+      const h = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+      const m = Math.floor((distance%(1000*60*60))/(1000*60));
+      const s = Math.floor((distance%(1000*60))/1000);
+
+      countdown.innerHTML = `${d}d ${h}h ${m}m ${s}s`;
+    },1000);
+  </script>
+
+</body>
+</html>
