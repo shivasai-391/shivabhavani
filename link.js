@@ -1,0 +1,1 @@
+const LIVE_STREAM_URL = "https://youtube.com/live/YOUR_STREAM_ID";

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Shiva Sai & Bhavani - Wedding Invitation</title>
+
+<!-- Fonts: Cinzel, Poppins, and Great Vibes -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+    --primary: #800020; /* Deep Royal Burgundy */
+    --primary-light: #a31c3f;
+    --accent-gold: #d4af37;
+    --accent-gold-light: #f3e5ab;
+    --text-dark: #2c2c2c;
+    --bg-warm: #fdfbf7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: var(--bg-warm);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px; /* Margin to expose the outer royal frame */
+}
+
+/* Mobile Wrapper with Royal Border Frame */
+.mobile-wrapper {
+    width: 100%;
+    max-width: 480px;
+    min-height: calc(100vh - 16px);
+    background: var(--bg-warm);
+    position: relative;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+    padding-bottom: 80px;
+    border-radius: 12px;
+    
+    /* Royal Gold & Burgundy Double Border Setup */
+    border: 4px double var(--accent-gold);
+    outline: 2px solid var(--primary);
+    outline-offset: -8px;
+    overflow-x: hidden;
+}
+
+/* Background Ornament Overlay */
+.mobile-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(var(--accent-gold) 0.75px, transparent 0.75px);
+    background-size: 16px 16px;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #600018 0%, #800020 50%, #4a000e 100%);
+    padding: 35px 20px 25px;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-bottom: 3px solid var(--accent-gold);
+}
+
+/* Sacred Symbols Row: Om - Ganesha - Swastik */
+.symbols-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 280px;
+    margin: 0 auto 10px;
+}
+
+.symbol-side {
+    font-size: 32px;
+    color: var(--accent-gold);
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+    animation: pulse 2.5s infinite ease-in-out;
+}
+
+.ganesha-img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.6));
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.12); opacity: 1; }
+}
+
+.header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: var(--accent-gold-light);
+}
+
+.sub-header-text {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+.flowers-divider {
+    color: var(--accent-gold);
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 4px;
+}
+
+/* Couple Profile Section */
+.section {
+    padding: 25px 20px 10px;
+    text-align: center;
+    position: relative;
+}
+
+.photo-frame {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, #d4af37, #fff8e8, #aa7c11);
+    box-shadow: 0 8px 20px rgba(128, 0, 32, 0.2);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-text {
+    font-size: 13px;
+    color: #666;
+    margin-top: 15px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: var(--primary);
+    line-height: 1.1;
+    margin: 12px 0px;
+    padding-bottom: 4px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
+}
+
+.with {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    color: var(--accent-gold);
+    font-weight: 700;
+    margin: -5px 0;
+}
+
+/* Cards Design */
+.card {
+    background: #ffffff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.card h3 {
+    color: var(--primary);
+    font-family: 'Cinzel', serif;
+    font-size: 17px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card h3 i {
+    color: var(--accent-gold);
+    font-size: 16px;
+}
+
+.venue-text {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.highlight-date {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;  
+}
+
+/* Button UI */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(128, 0, 32, 0.25);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+    box-shadow: none;
+    margin-top: 8px;
+}
+
+.btn-live {
+    background: linear-gradient(135deg, #d4af37, #aa7c11);
+}
+
+/* Floating Audio Player Button */
+.music-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-gold), #aa7c11);
+    color: white;
+    border: 3px solid #ffffff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.music-btn.playing {
+    animation: rotateDisc 3s linear infinite;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+
+@keyframes rotateDisc {
+    100% { transform: rotate(360deg); }
+}
+
+/* Countdown Styling */
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.box {
+    background: #fff8e8;
+    padding: 10px 4px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.box h2 {
+    color: var(--primary);
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+.box span {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-top: 2px;
+}
+
+/* Footer UI */
+.footer {
+    padding: 25px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #600018 0%, #800020 100%);
+    color: white;
+    border-top: 3px solid var(--accent-gold);
+    margin-top: 25px;
+}
+
+.footer p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--accent-gold-light);
+}
+
+.error-msg {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 8px;
+    display: none;
+}
+</style>
+</head>
+<script src="./link.js"></script>
+<body>
+
+<div class="mobile-wrapper">
+
+    <!-- Header Section with Om, Ganesha, Swastik -->
+    <div class="header">
+        <div class="symbols-row">
+            <div class="symbol-side">🕉</div>
+            <img src="https://i.ibb.co/1jpqj5K/imgbin-bfc23e98f76de08e5114b94c8fd607c7.png" alt="Lord Ganesha" class="ganesha-img">
+            <div class="symbol-side">卐</div>
+        </div>
+        <h1>Wedding Invitation</h1>
+        <div class="sub-header-text">Save The Dates</div>
+        <div class="flowers-divider">❖ ── ✦ ── ❖</div>
+    </div>
+
+    <!-- Main Couple Section -->
+    <div class="section">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="couple.jpg" alt="Couple Photo">
+            </div>
+        </div>
+
+        <p class="intro-text">Together with their families, invite you to celebrate the wedding of</p>
+
+        <div class="names">Shiva Sai</div>
+        <div class="with">&</div>
+        <div class="names">Bhavani Sree</div>
+
+        <!-- Add to Calendar Button -->
+        <a class="btn btn-secondary" style="margin-top:10px;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Shiva+Sai+%26+Bhavani%27s+Wedding&dates=20260816T054500Z/20260816T084500Z&details=Join+us+in+celebrating+our+special+day!&location=Natraj+Gardens,+Bypass+Road,+Karimnagar" target="_blank">
+            <i class="far fa-calendar-plus"></i> Add to Calendar
+        </a>
+    </div>
+
+    <!-- Countdown Card -->
+    <div class="card">
+        <h3><i class="fas fa-hourglass-half"></i> Wedding Countdown</h3>
+        <div class="countdown" id="countdown-container">
+            <div class="box">
+                <h2 id="days">00</h2>
+                <span>Days</span>
+            </div>
+            <div class="box">
+                <h2 id="hours">00</h2>
+                <span>Hours</span>
+            </div>
+            <div class="box">
+                <h2 id="minutes">00</h2>
+                <span>Mins</span>
+            </div>
+            <div class="box">
+                <h2 id="seconds">00</h2>
+                <span>Secs</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wedding Event Card -->
+    <div class="card">
+        <h3><i class="fas fa-ring"></i> The Wedding</h3>
+        <p class="venue-text">
+            <span class="highlight-date">Sunday, 16 August 2026</span><br>
+            Muhurtham: 11:15 AM<br><br>
+            <strong>Natraj Gardens</strong><br>
+            Bypass Road, Karimnagar
+        </p>
+        <button class="btn" onclick="openMap2()">
+            <i class="fas fa-map-marker-alt"></i> View on Maps
+        </button>
+    </div>
+
+    <!-- Reception Event Card -->
+    <div class="card">
+        <h3><i class="fas fa-glass-cheers"></i> The Reception</h3>
+        <p class="venue-text">
+            <span class="highlight-date">Sunday, 23 August 2026</span><br>
+            Time: 12:30 PM Onwards<br><br>
+            <strong>Narender Reddy Function Hall</strong><br>
+            Metpally, Jagityal
+        </p>
+        <button class="btn" onclick="openMap1()">
+            <i class="fas fa-map-marker-alt"></i> View on Maps
+        </button>
+    </div>
+
+    <!-- Live Stream Card -->
+    <div class="card">
+        <h3><i class="fas fa-video"></i> Live Stream</h3>
+        <p class="venue-text">
+            If you can't join us in person, we would love for you to witness our special day virtually.
+        </p>
+        <button class="btn btn-live" id="liveBtn" onclick="watchLive()">
+            <i class="fas fa-play-circle"></i> Watch Live
+        </button>
+        <p class="error-msg" id="liveError">The live stream link is not available yet.</p>
+    </div>
+
+    <!-- RSVP Card -->
+    <div class="card">
+        <h3><i class="fas fa-envelope-open-text"></i> Blessings</h3>
+        <p class="venue-text">
+            We request the honor of your presence and blessings.
+        </p>
+        <button class="btn" onclick="call()">
+            <i class="fas fa-phone-alt"></i> Contact Family
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>🙏 We eagerly await your presence 🙏</p>
+    </div>
+
+</div>
+
+<!-- Floating Music Button -->
+<button class="music-btn" id="musicBtn" onclick="toggleAudio()" title="Play / Pause Music">
+    <i class="fas fa-music" id="musicIcon"></i>
+</button>
+
+<audio id="weddingAudio" loop preload="auto">
+    <source src="Raarandoi.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+// Maps navigation helpers
+function openMap1() {
+    window.open("https://maps.app.goo.gl/LGMNqNMMZCN8zkVF8", "_blank");
+}
+
+function openMap2() {
+    window.open("https://maps.app.goo.gl/hnnQ2Le74tbkJ1dc8", "_blank");
+}
+
+// Call Action
+function call() {
+    window.location.href = "tel:+91868857852";
+}
+
+// Live Stream Fetch Function
+function watchLive() {
+    const errorMsg = document.getElementById('liveError');
+    
+    if (typeof LIVE_STREAM_URL !== 'undefined' && LIVE_STREAM_URL.trim() !== "") {
+        let link = LIVE_STREAM_URL.trim();
+        if (!/^https?:\/\//i.test(link)) {
+            link = 'https://' + link;
+        }
+        window.open(link, "_blank");
+    } else {
+        errorMsg.style.display = 'block';
+    }
+}
+
+// Audio Toggle Functionality
+const audio = document.getElementById('weddingAudio');
+const musicBtn = document.getElementById('musicBtn');
+const musicIcon = document.getElementById('musicIcon');
+
+function toggleAudio() {
+    if (audio.paused) {
+        audio.play().then(() => {
+            musicBtn.classList.add('playing');
+            musicIcon.className = 'fas fa-pause';
+        }).catch(err => {
+            console.log("Audio playback error:", err);
+        });
+    } else {
+        audio.pause();
+        musicBtn.classList.remove('playing');
+        musicIcon.className = 'fas fa-music';
+    }
+}
+
+// Countdown Logic
+const weddingDate = new Date("August 16, 2026 11:15:00").getTime();
+
+const timer = setInterval(function() {
+    const now = new Date().getTime();
+    const gap = weddingDate - now;
+
+    if (gap < 0) {
+        clearInterval(timer);
+        document.getElementById("countdown-container").innerHTML = "<h4 style='color:var(--primary); grid-column: span 4; font-size:16px; margin-top:5px;'>The Celebration Has Begun! 🎉</h4>";
+        return;
+    }
+
+    const d = Math.floor(gap / (1000 * 60 * 60 * 24));
+    const h = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((gap % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = d < 10 ? '0' + d : d;
+    document.getElementById("hours").innerText = h < 10 ? '0' + h : h;
+    document.getElementById("minutes").innerText = m < 10 ? '0' + m : m;
+    document.getElementById("seconds").innerText = s < 10 ? '0' + s : s;
+}, 1000);
+</script>
+
+</body>
+</html>
